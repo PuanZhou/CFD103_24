@@ -7,7 +7,7 @@
 }
 
 nav{
-   background-color:seagreen;
+
    position: relative;
 
 }
@@ -42,3 +42,118 @@ nav{
     font-size: 24px; 
     margin: 0 90px;
 }
+
+ .start{
+    padding-top: 200px;
+}
+
+.start .container{
+    width: 100%;
+    background-color: rgb(246, 246, 246);
+    display: flex;
+    margin: auto;
+}
+
+
+.pic_intro{
+    margin: 80px 0;
+    margin-left:300px;
+    position: absolute;
+
+}
+.pic_intro img{
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+
+}
+
+ .intro .txt{
+    font-family: "Microsoft JhengHei","Noto Sans CJK TC"; 
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+ h1{
+    font-family: "Microsoft JhengHei","Noto Sans CJK TC"; 
+    font-size: 48px;
+    font-weight: bold;
+}
+.intro .txt h3{
+    font-size: 24px;
+    font-weight: bold;
+
+}
+.intro .txt p{
+    font-size: 18px;
+    font-weight: bold;
+}
+.intro .button {
+    text-align: center;
+    margin: 30px 125px;
+}
+.intro .button button{
+    width: 300px;
+    line-height: 75px;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    background-color: rgb(14, 103, 128);
+    color: white;
+    border-radius:10px;
+}
+
+.pic_Atene{
+    margin-left:auto;
+    margin-right: 200px;
+
+}
+
+.pic_Atene img{   
+    width: 100%;
+    height: 100%;
+    vertical-align:top;
+}
+
+.slide{
+    padding: 200px;
+}
+
+.slide h1{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+ /* Demo styles  */
+
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 1080px;
+    height: 600px;
+    object-fit: cover;
+  }
+
+/* Demo styles  */

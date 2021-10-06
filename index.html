@@ -6,7 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gesha</title>
     <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="/fontawesome-free-5.15.4-web/css/all.css">
     <link rel="stylesheet" href="index.css">   
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+
+
+
+
 </head>
 
 <body>
@@ -42,10 +50,81 @@
         </div>
     </div> 
 
-        <video src="./resources/rough.mp4"autoplay loop muted></video>
-        <h2>ewerwer</h2>
-        werwrawerqwe123123
-            dasdfaqwrqw
+        <video src="./resources/The Louvre Experience 4K (1080p) (online-video-cutter.com).mp4"autoplay muted></video>
+
+    <section class="start">
+        <div class="container">
+            <div class="intro">
+                <div class="pic_intro">
+                    <img src="./resources/del sacramento.jpg" alt="">
+                    <div class="txt">
+                        <h1>關於 Gesha</h1>
+                        <h3>Gesha</h3>
+                        <p>是由一群專業又熱情的人文學家組成的真人互動
+                            <br>
+                            線上博物館導覽機構
+                            <br>
+                            我們致力於提供大眾專業的世界各大博物館導覽。
+                            <br>
+                            也為您提供獨一無二的客製化導覽行程
+                            <br>
+                            在我們專業人員的帶領下，
+                            <br>
+                            您將與親朋好友一起踏上探索知識的旅途。</p>
+                            <div class="button">
+                                <button>立即啟航</button>
+                            </div>
+                    </div>                     
+                </div>         
+            </div>
+            <div class="pic_Atene">
+                <img src="./resources/Atene.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="slide">
+        <h1>選擇您的旅途</h1>
+ <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="#"><img src="./resources/Forbidden City 1080.jpg" alt=""></div></a>
+            <div class="swiper-slide"><img src="./resources/TBM.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./resources/Louvre.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./resources/Musea Vaticana1080.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./resources/Natural History 1080.jpg" alt=""></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        cssMode: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+        },
+        mousewheel: true,
+        keyboard: true,
+        });
+    </script>   
+    </section>
+
+
+
+    
+
+
 </body>
 </html>
 

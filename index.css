@@ -1,5 +1,9 @@
+*{
+    font-family: "Microsoft JhengHei","Noto Sans CJK TC";
+}
+
+
 h1{
-    font-family: "Microsoft JhengHei","Noto Sans CJK TC"; 
     font-size: 48px;
     font-weight: bold;
 }
@@ -7,74 +11,80 @@ h1{
 
 
 nav a{
-    font-family: "Microsoft JhengHei","Noto Sans CJK TC";
     text-decoration: none;
     color: white;
     font-size: 24px; 
     margin: 0 90px;
 }
 
-h3{
-    font-family: "Microsoft JhengHei","Noto Sans CJK TC"; 
+h2{
     font-size: 24px;
     font-weight: bold;
 
 }
 
 p{
-    font-family: "Microsoft JhengHei","Noto Sans CJK TC"; 
     font-size: 18px;
     font-weight: bold;
 }
 
-
-.head{
-    background-color: rgb(64,64,64);
-}
-.navspace{
-    height: 120px;
-}
-
 nav{
-
-   position: relative;
-
+    background-color: #262228;
+    width: 100%;
+    height: 120px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    display: flex;
+    /* border: 1px solid red; */
 }
 
 .nav-left {
   display: flex;
-  margin: 40px 0;
-  position: absolute;
-  left: 30px;
+  width: 50%;
+  padding: 40px 0;
+  letter-spacing: 3px;
+  /* border: 1px solid red; */
+
 }  
 .nav-right {
-    display:flex;  
-    margin: auto;
-    margin: 40px 0;
-    position: absolute;
-    right: 30px;
+    width: 50%;
+    display:flex;
+    padding: 40px 20px;
+    letter-spacing: 3px;
+    /* border: 1px solid red; */
 }  
 
-.logo img{
+.logo {
     position: absolute;
-    left: 900px;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -35%);
 }
 
- .start{
+.video{
+    margin: auto;
+    width: 100%;
+}
+
+
+section.start{
     padding-top: 200px;
+   
 }
 
 .start .container{
     width: 100%;
-    background-color: rgb(246, 246, 246);
+    background-color: rgb(246, 246, 246); 
+    margin: auto; 
     display: flex;
-    margin: auto;
 }
 
 
 .pic_intro{
-    margin: 90px 5px;
-    position: absolute;
+    margin: 90px 0px;
+    position: relative;
 
 }
 .pic_intro img{
@@ -88,10 +98,11 @@ nav{
  .intro .txt{
     position: absolute;
     margin: 20px;
+    letter-spacing: 2px;
     top: 0;
     left: 0;
 }
-.intro .txt h3{
+.intro .txt h2{
     font-size: 30px;
 }
 .intro .txt p{
@@ -135,16 +146,20 @@ nav{
     vertical-align:top;
 }
 
-.slide{
-    padding: 200px;
+section.slide{
+    padding-top: 200px;   
 }
 
-.slide h1{
+.slider_container{
+    width: 1200px;
+    margin: auto;
     text-align: center;
+}
+.slider_container .title h1{
     padding-bottom: 20px;
 }
 
- /* Demo styles  */
+ /* slide styles  */
 
  html,
  body {
@@ -187,9 +202,180 @@ nav{
 
   .swiper-slide img {
     display: block;
-    width: 1080px;
-    height: 600px;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
     object-fit: cover;
   }
   
-/* Demo styles  */
+/* slide styles  */
+
+section.collection{
+    background-color: #262228;
+    margin-top: 200px;   
+}
+
+.collection_container{
+    width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+.collection_container .title h1{
+    color: white;
+    padding: 30px 0;
+}
+
+.collection_item{
+    display: flex;
+}
+
+.collection_item .item{
+    width: 13.333333%;
+    margin: 20px 3.33333%;
+}
+
+.collection_item .item img{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+
+.collection_item .txt h2{
+    color: white;
+}
+
+section.topic{   
+    margin-top: 200px; 
+    padding-bottom: 200px;
+}
+
+.topic_container{
+    width: 1200px; 
+    margin: auto;
+    text-align: center;
+}
+
+.topic-item-wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.topic-item{
+    width: 31.666666%;
+    height: 450px;
+    margin-right: 2.5%;
+    box-shadow: 9px -2px 6px rgba(186,186,186,0.75);
+}
+
+.topic-img{
+    position: relative;
+}
+
+.topic-img img{
+    width: 100%;
+    height: 300px;
+    vertical-align: middle;    
+}
+.topic-item.Sistine-Chapel-ceiling{
+    margin-right: 0px;
+}
+
+.topic-item a.topic-lable{
+    background-color: rgb(88,103,115);
+    display: inline-block;
+    padding: 0px 10px 5px 10px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.topic-item a.topic-lable::before{
+    content:"";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url('./resources/compass.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: translate(-5px, 8px);
+}
+
+.topic-item a.topic-lable.British-Museum{
+    background-color: rgb(145, 118, 88);
+}
+
+.topic-item a.topic-lable.Musei-Vaticani{
+    background-color: #A5A5AF;
+}
+
+.topic-item-wrap span{
+    display: inline-block;
+    font-size: 18px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    /* border:1px solid red; */
+
+}
+
+.topic-item-wrap a.title{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-decoration: none;
+    margin:20px 10px;
+    color: rgb(88,103,115);
+
+    /* border: 1px solid red; */
+}
+.topic-item-wrap a.title.Ramesses-II{
+    color: rgb(145, 118, 88);
+}
+.topic-item-wrap a.title.Sistine-Chapel{
+    color: #A5A5AF;
+}
+
+footer{
+    background-color:#262228;
+    width: 100%;
+    height: 250px;
+    position: relative;
+}
+
+.footer_container{
+    width: 1080px;
+    margin: auto;
+}
+
+.footer_info{
+    padding-top: 50px;
+}
+.footer_info ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer_info ul li a{
+    text-decoration: none;
+    /* display: inline-block; */
+    color: white;
+    font-size: 24px;
+    font-weight: bold; 
+  
+}
+
+.social-media{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    margin-top: 65px;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}

@@ -40,7 +40,7 @@
                       <a href="#">近期展覽專題</a>
                     </div>
                     <div class="nav-login">
-                      <a href="#">立即登入</a>
+                      <a href="#">關於我們</a>
                     </div>
                     <div class="nav-favourite">
                        <a href="#">我的珍藏</a>
@@ -50,7 +50,9 @@
         </div>
     </div> 
 
-        <video src="./resources/The Louvre Experience 4K (1080p) (online-video-cutter.com).mp4"autoplay muted></video>
+        <section class="video">
+            <video src="./resources/The Louvre Experience 4K (1080p) (online-video-cutter.com).mp4"autoplay muted></video>
+        </section>
 
 
     <section class="start">
@@ -60,7 +62,7 @@
                     <img src="./resources/860px-Disputa_del_Sacramento_(Rafael).jpg" alt="">
                     <div class="txt">
                         <h1>關於 Gesha</h1>
-                        <h3>Gesha</h3>
+                        <h2>Gesha</h2>
                         <p>是由一群專業又熱情的人文學家組成的真人互動
                             <br>
                             線上博物館導覽機構
@@ -87,40 +89,214 @@
 
 
     <section class="slide">
-        <h1>選擇您的旅途</h1>
- <!-- Swiper -->
-    <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"><a href="#"><img src="./resources/Forbidden City 1080.jpg" alt=""></div></a>
-            <div class="swiper-slide"><img src="./resources/TBM.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="./resources/Louvre.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="./resources/Musea Vaticana1080.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="./resources/Natural History 1080.jpg" alt=""></div>
+        <div class="slider_container">
+            <div class="title">
+                <h1>選擇您的旅途</h1>
+            </div>
+             <!-- Swiper -->
+                <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                <a href="#">
+                    <img src="./resources/beijing the palace museum1300.jpg" alt="">
+                </a>
+            </div>
+                <div class="swiper-slide">
+                    <a href="">
+                        <img src="./resources/TBMtest.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="">
+                        <img src="./resources/Louvre1300.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="">
+                        <img src="./resources/Musea Vaticana.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="">
+                        <img src="./resources/75.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+                </div>
+                <!-- Initialize Swiper -->
+                <script>
+            var swiper = new Swiper(".mySwiper", {
+            cssMode: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            mousewheel: true,
+            keyboard: true,
+            });
+                </script>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
-    </div>
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-        cssMode: true,
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-            el: ".swiper-pagination",
-        },
-        mousewheel: true,
-        keyboard: true,
-        });
-    </script>   
     </section>
 
-
-
+    <section class="collection">
+        <div class="collection_container">
+            <div class="title">
+                <h1>各館珍藏</h1>
+            </div>
+            <div class="collection_item">
+                <div class="item">
+                    <div class="Qingming-Shanghe-Tu">
+                        <a href=""><img src="./resources/Qingming Shanghe Tu.png" alt=""></a>
+                        <div class="txt">
+                            <h2 >北京故宮</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="Sutton-Hoo-helmet">
+                        <a href=""><img src="./resources/Sutton_Hoo_helmet_150.jpg" alt=""></a>
+                        <div class="txt">
+                            <h2 >大英博物館</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="Victoire-de-Samothrace">
+                        <a href=""><img src="./resources/Victoire_de_Samothrace_150.png" alt=""></a>
+                        <div class="txt">
+                            <h2 >法國羅浮宮</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="Laocoon-and-His-Sons">
+                        <a href=""><img src="./resources/Laocoon_and_His_Sons_150.jpg" alt=""></a>
+                        <div class="txt">
+                            <h2 >梵蒂岡博物館</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="Tyrannosaurus_rex">
+                        <a href=""><img src="./resources/Tyrannosaurus rex_150.jpg" alt=""></a>
+                        <div class="txt">
+                            <h2 >美國自然史博物館</h2>
+                        </div>
+                    </div>
+                </div>            
+            </div>
+        </div>
+    </section>
     
+    <section class="topic">
+        <div class="topic_container">
+            <div class="title">
+                <h1>近期展覽專題</h1>
+            </div >
+            <div class="topic-item-wrap">
+                <div class="topic-item Mona-Lisa">
+                    <div class="topic-img">
+                        <a href="#">
+                            <img src="./resources/Mona Lisa.jpg" alt="">
+                        </a>
+                        <a href="" class="topic-lable Louvre">
+                            法國羅浮宮
+                        </a>
+                    </div>
+                    <div class="txt">
+                        <span class="date">2021/11/8-2022/2/14</span>
+                        <a class="title" href="#">
+                            從《蒙娜麗莎》到《加納的婚禮》
+                        </a>
+                    </div>
+                </div>
+                <div class="topic-item Ramesses-II">
+                    <div class="topic-img">
+                        <a href="#">
+                            <img src="./resources/ramesses-ii.jpg" alt="">
+                        </a>
+                        <a href="" class="topic-lable British-Museum">
+                            大英博物館
+                        </a>
+                    </div>
+                    <div class="txt">
+                        <span class="date">2021/12/4-2022/2/15</span>
+                        <a class="title Ramesses-II" href="#">
+                            拉美西斯二世特展
+                        </a>
+                    </div>
+                </div>
+                <div class="topic-item Sistine-Chapel-ceiling">
+                    <div class="topic-img">
+                        <a href="#">
+                            <img src="./resources/Sistine Chapel ceiling.jpg" alt="">
+                        </a>
+                        <a href="" class="topic-lable Musei-Vaticani">
+                            梵蒂岡博物
+                        </a>
+                    </div>
+                    <div class="txt">
+                        <span class="date">2021/11/8-2022/2/14</span>
+                        <a class="title Sistine-Chapel" href="#">
+                            米開朗基羅《創世紀》文藝復興藝術的思潮
+                        </a>
+                    </div>
+                </div>
+            </div>        
+        </div>
+    </section>
+    <footer>
+        <div class="footer_container">
+            <div class="footer_info">
+                <ul>
+                    <li><a href="#">立即啟航</a></li>
+                    <li><a href="#">博物館介紹</a></li>
+                    <li><a href="#">各館珍藏</a></li>
+                    <li><a href="#">近期展覽專題</a></li>
+                    <li><a href="#">關於我們</a></li>
+                    <li><a href="#">我的珍藏</a></li>
+                </ul>
+            </div>
+            <div class="social-media">
+                <div class="fb">
+                    <div class="pic">
+                        <a href="">
+                        <img src="./resources/fb-icon.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="ig">
+                    <div class="pic">
+                        <a href="">
+                        <img src="./resources/ig-icon.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="yt">
+                    <div class="pic">
+                        <a href="">
+                        <img src="./resources/yt-icon.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="pic">
+                        <a href="">
+                        <img src="./resources/line-icon.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </footer>
 
 
 </body>

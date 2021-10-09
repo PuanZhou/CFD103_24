@@ -10,17 +10,9 @@ h1{
 
 
 
-nav a{
-    text-decoration: none;
-    color: white;
-    font-size: 24px; 
-    margin: 0 90px;
-}
-
 h2{
     font-size: 24px;
     font-weight: bold;
-
 }
 
 p{
@@ -28,6 +20,7 @@ p{
     font-weight: bold;
 }
 
+/* -------------------導覽列----------------  */
 nav{
     background-color: #262228;
     width: 100%;
@@ -37,25 +30,36 @@ nav{
     left: 0;
     z-index: 5;
     display: flex;
-    /* border: 1px solid red; */
 }
-
-.nav-left {
-  display: flex;
-  width: 50%;
-  padding: 40px 0;
-  letter-spacing: 3px;
-  /* border: 1px solid red; */
-
-}  
-.nav-right {
-    width: 50%;
-    display:flex;
-    padding: 40px 20px;
-    letter-spacing: 3px;
+.nav_list{
+    width: 100%;
     /* border: 1px solid red; */
-}  
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_list ul{
+    list-style: none;  
+    display: flex;
 
+} 
+.nav_list li {
+    padding: 0 90px;
+}   
+.nav_list ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    letter-spacing: 3px;
+    font-weight: bold; 
+  
+}
+.nav_list a:hover{
+    display: inline-block;
+    border-bottom: 2px solid white ;
+    padding-bottom:10px;
+}
 .logo {
     position: absolute;
     top:50%;
@@ -63,36 +67,66 @@ nav{
     transform: translate(-50%, -35%);
 }
 
+/* -------------------拿破崙----------------  */
+
+.Napoleon{
+    width: 123px;
+    height: 143px;
+    text-align: center;
+    position: fixed;
+    top: 400px;
+    right: 0;
+    z-index: 7;
+}
+
+.Napoleon img{
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+}
+
+.Napoleon a{
+    text-decoration: none; 
+}
+
+.Napoleon span{
+    margin-top: -10px;
+    writing-mode: vertical-lr ;
+    color: white;
+    background-color: rgb(14, 103, 128);
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    padding:15px;
+    border-radius:20px;
+    box-shadow: 8px 2px 5px rgba(82,82,82,0.75);
+}
+
+/* -------------------影片----------------  */
 .video{
     margin: auto;
     width: 100%;
 }
 
-
+/* -------------------立即啟航----------------  */
 section.start{
-    padding-top: 200px;
-   
+    padding-top: 200px;  
 }
-
 .start .container{
     width: 100%;
     background-color: rgb(246, 246, 246); 
     margin: auto; 
     display: flex;
+    align-items: center;
 }
-
-
 .pic_intro{
-    margin: 90px 0px;
     position: relative;
-
 }
 .pic_intro img{
     width: 100%;
     height: 100%;
     opacity: 70%;
     vertical-align: top;
-
 }
 
  .intro .txt{
@@ -110,10 +144,6 @@ section.start{
     line-height: 40px;
     padding-left: 10px;
 }
-
-
-
-
 .intro .button {  
     margin: 0 250px;
     margin-top: 100px;
@@ -134,30 +164,30 @@ section.start{
 .intro .button a:hover{
     background-color: rgb(248, 120, 120);
 }
-.pic_Atene{
-    margin-left:auto;
-
-}
-
 .pic_Atene img{   
     width: 100%;
     height: 100%;
     opacity: 75%;
     vertical-align:top;
 }
-
+/* --------------------------------選擇您的旅途----------------  */
 section.slide{
     padding-top: 200px;   
 }
+
+
 
 .slider_container{
     width: 1200px;
     margin: auto;
     text-align: center;
+    /* border: 1px solid red; */
 }
 .slider_container .title h1{
     padding-bottom: 20px;
 }
+
+/* --------------------------------幻燈片----------------  */
 
  /* slide styles  */
 
@@ -210,8 +240,11 @@ section.slide{
   
 /* slide styles  */
 
+/* --------------------------------各館珍藏-----------------  */
+
 section.collection{
     background-color: #262228;
+    width: 100%;
     margin-top: 200px;   
 }
 
@@ -244,6 +277,8 @@ section.collection{
 .collection_item .txt h2{
     color: white;
 }
+
+/* --------------------------------近期專題-----------------  */
 
 section.topic{   
     margin-top: 200px; 
@@ -340,16 +375,52 @@ section.topic{
     color: #A5A5AF;
 }
 
+ /* --------------------------------footer-----------------  */
 footer{
     background-color:#262228;
     width: 100%;
     height: 250px;
-    position: relative;
+    position: relative;   
 }
 
+.top{
+    width: 75px;
+    height: 98px;
+    position: absolute;
+    right: 120px;
+    top: -70px;
+    text-align: center;
+    
+}
+.top img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    vertical-align: top;
+    box-shadow: 9px -1px 5px rgba(0,0,0,0.18);
+}
+.top span{
+    color: white;
+    display: inline-block;
+    padding-top: 5px;
+    font-weight: bold;
+}
 .footer_container{
     width: 1080px;
     margin: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.Baco-San-Juan{
+    position: absolute;
+    margin: 20px;
+    left: -200px;
+    z-index: 1;
+}
+.Baco-San-Juan img{
+    width: 100%;
+    vertical-align: top;
 }
 
 .footer_info{
@@ -363,10 +434,10 @@ footer{
 }
 .footer_info ul li a{
     text-decoration: none;
-    /* display: inline-block; */
     color: white;
     font-size: 24px;
     font-weight: bold; 
+    letter-spacing: 3px;
   
 }
 
@@ -376,6 +447,10 @@ footer{
     display: flex;
     margin-top: 65px;
     justify-content: space-evenly;
-    align-items: center;
-    
+    align-items: center;   
+}
+
+.social-media img{
+    width: 100%;
+    vertical-align: top;
 }

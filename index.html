@@ -1,60 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-hant">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gesha</title>
-    <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css">
-    <link rel="stylesheet" href="/fontawesome-free-5.15.4-web/css/all.css">
-    <link rel="stylesheet" href="index.css">   
-    <link
-    rel="stylesheet"
-    href="./swiper-bundle.min.css"
-  />
-  
-  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <title>Gesha 博物館實時線上導覽 您的善知識、善友</title>
+    <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="./swiper-bundle.min.css"/>
+    <link href="/./fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet">  
+   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+   <script src="./WOW/dist/wow.min.js"></script>
 
+   <script>
+    new WOW().init();
+    </script>
+  
+   <link rel="stylesheet" href="index.css">
+   
 </head>
 
 <body>            
-    <!-- ------------------------拿破崙------------------------ -->
-    <div class="Napoleon">
-        <a href="">
-            <img src="./resources/NapoleonOK.png" alt="">
-            <span>立即啟航</span>
-        </a>
-    </div>
-    <!-- ------------------------導覽列------------------------ -->
-            <nav>
-                <div class="logo">
-                    <img src="./resources/Logo-removebg.png" alt="">
+    <header>
+        <!-- ------------------------導覽列------------------------ -->
+        <nav>
+            <div class="logo">
+                <a href="./index.html">
+                <img src="./resources/Logo-removebg.png" alt="">
+                </a>
+            </div>
+            <div class="nav_list">
+                <div class="nav-left">
+                    <ul>
+                        <li><a href="#">立即啟航</a></li>
+                        <li><a href="#">博物館介紹</a></li>
+                        <li><a href="#">各館珍藏</a></li>
+                    </ul>
                 </div>
-                <div class="nav_list">
-                    <div class="nav-left">
-                        <ul>
-                            <li><a href="#">立即啟航</a></li>
-                            <li><a href="#">博物館介紹</a></li>
-                            <li><a href="#">各館珍藏</a></li>
-                        </ul>
-                    </div>
-                    <div class="nav-right">
-                        <ul>
-                            <li><a href="#">近期展覽專題</a></li>
-                            <li><a href="#">關於我們</a></li>
-                            <li><a href="#">我的珍藏</a></li>
-                        </ul>
-                    </div>
+                <div class="nav-right">
+                    <ul>
+                        <li><a href="./topic.html">近期展覽專題</a></li>
+                        <li><a href="#">關於我們</a></li>
+                        <li><a href="#">我的珍藏</a></li>
+                    </ul>
                 </div>
-            </nav>
-        </div>
-    </div> 
+            </div>
+        </nav>
    
     <!-- ------------------------影片------------------------ -->
 
         <section class="video">
             <video src="./resources/The Louvre Experience 4K (1080p) (online-video-cutter.com).mp4"autoplay muted></video>
         </section>
+    </header>    
+ <!-- ------------------------拿破崙------------------------ -->
+    <div class="Napoleon">
+    <a href="">
+        <img src="./resources/NapoleonOK.png" alt="">
+        <span>立即啟航</span>
+    </a>
+    </div>
 
     <!-- ------------------------立即啟航------------------------ -->
 
@@ -98,8 +102,8 @@
                 <h1>選擇您的旅途</h1>
             </div>
              <!-- Swiper -->
-                <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
                 <div class="swiper-slide">
                 <a href="#">
                     <img src="./resources/beijing the palace museum1300.jpg" alt="">
@@ -235,8 +239,8 @@
                     </div>
                     <div class="txt">
                         <span class="date">2021/12/4-2022/2/15</span>
-                        <a class="title Ramesses-II" href="#">
-                            拉美西斯二世特展
+                        <a class="title British_Museum" href="#">
+                            《拉美西斯二世》埃及新王國時期巔峰特展
                         </a>
                     </div>
                 </div>
@@ -251,7 +255,7 @@
                     </div>
                     <div class="txt">
                         <span class="date">2021/11/8-2022/2/14</span>
-                        <a class="title Sistine-Chapel" href="#">
+                        <a class="title Musei_Vaticani" href="#">
                             米開朗基羅《創世紀》文藝復興藝術的思潮
                         </a>
                     </div>
@@ -270,7 +274,7 @@
             </a>
         </div>
         <div class="footer_container">
-            <div class="Baco-San-Juan">
+            <div class="wow Baco-San-Juan">
                 <img src="./resources/Baco-San-Juan-Bautistas140.jpg" alt="">
             </div>
             <div class="footer_info">

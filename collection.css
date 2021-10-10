@@ -1,0 +1,413 @@
+*{
+    font-family: "Microsoft JhengHei","Noto Sans CJK TC","Noto Sans TC";
+}
+
+
+h1{
+    font-size: 48px;
+    font-weight: bold;
+}
+
+
+
+h2{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+p{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* -------------------導覽列----------------  */
+nav{
+    background-color: #262228;
+    width: 100%;
+    height: 120px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    display: flex;
+}
+.nav_list{
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_list ul{
+    list-style: none;  
+    display: flex;
+
+} 
+.nav_list li {
+    padding: 0 90px;
+}   
+.nav_list ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    letter-spacing: 3px;
+    font-weight: bold; 
+  
+}
+.nav_list a:hover{
+    display: inline-block;
+    border-bottom: 2px solid white ;
+    padding-bottom:10px;
+}
+.logo {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+}
+
+.wallpaper{
+    width: 100%;
+    height: 700px;
+ 
+}
+
+.wallpaper img{
+    width: 100%;
+    max-height: 700px;
+    object-fit: cover;
+    position: relative;
+}
+
+header .title h1{
+    display: inline-block;
+    letter-spacing: 2px;
+    color: white;
+    background-color: rgba(10, 10, 10, 0.61);
+    padding: 20px 20px 20px 80px;
+    position: absolute;
+    top: 575px;
+    left: 20px;    
+  
+}
+
+/* -------------------拿破崙----------------  */
+
+.Napoleon{
+    width: 123px;
+    height: 143px;
+    text-align: center;
+    position: fixed;
+    top: 400px;
+    right: 0;
+    z-index: 7;
+}
+
+.Napoleon img{
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+}
+
+.Napoleon a{
+    text-decoration: none; 
+}
+
+.Napoleon span{
+    margin-top: -10px;
+    writing-mode: vertical-lr ;
+    color: white;
+    background-color: rgb(14, 103, 128);
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    padding:15px;
+    border-radius:20px;
+    box-shadow: 8px 2px 5px rgba(82,82,82,0.75);
+}
+
+/* --------------------------------各館珍藏-----------------  */
+
+section.collection{   
+    margin-top: 200px; 
+    padding-bottom: 200px;
+
+}
+
+.collection_container{
+    width: 1200px; 
+    margin: auto;
+    text-align: center;
+    display: flex;
+    /* border: 1px solid red; */
+}
+.collection-item-wrap{
+    margin-top: 100px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: end;
+    /* border: 1px solid red; */
+}
+.choice{
+    width: 220px;
+    margin-right: auto;
+    text-align: left;
+    position: relative;
+    /* border: 1px solid red; */
+}
+.search input{
+    position: relative;
+}
+.search button{
+    position: absolute;
+    right: 0px;
+}
+.museum input{
+    margin: 30px 0;
+}
+.item_wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    /* border: 1px solid red; */
+}
+.collection-item{
+    width: 225px;
+    height: 250px;
+    margin-left: 25px;
+    margin-bottom: 50px;
+    box-shadow: 9px -2px 6px rgba(186,186,186,0.75);
+    /* border: 1px solid red; */
+}
+
+.collection-img{
+    position: relative;
+}
+
+.collection-img img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    vertical-align: middle;    
+}
+
+.item_wrap .collection-img .txt{
+    position: absolute;
+    top: 0;
+    right:0;
+    bottom: 0;
+    left: 0;
+    padding:10px 10px;
+    background-color: rgba(10, 10, 10, 0.61);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity 1s;
+    z-index: 1;
+}
+
+.item_wrap .collection-img:hover .txt{
+    opacity: 1;
+}
+
+
+
+.item_wrap .txt h3{
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+}
+.item_wrap .txt p{
+    font-size: 16px;
+    color: white;
+    font-weight: 100;
+}
+.item_wrap .txt a{
+    background-color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: #262228;
+    border-radius: 50px;
+    padding: 5px 20px;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+}
+
+.item_wrap .txt a:hover{
+    color: #fff;
+    background-color:rgb(14, 103, 128);
+}
+
+
+span.topic-lable{
+    background-color: rgb(88,103,115);
+    display: inline-block;
+    padding: 0px 10px 5px 10px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    z-index: 0;
+}
+
+span.topic-lable::before{
+    content:"";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('./resources/compass.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: translate(-3px, 4px);
+}
+span.topic-lable.British-Museum{
+    background-color: rgb(145, 118, 88);
+}
+
+span.topic-lable.Musei-Vaticani{
+    background-color: #A5A5AF;
+}
+span.topic-lable.Forbidden-City{
+    background-color: #b91a1a;
+}
+span.topic-lable.natural-history{
+    background-color: rgb(9,128,148);
+}
+
+
+/* ------------Swiper-------------  */
+
+.swiper {
+    width: 350px;
+    height: 50px;
+    /* border: 1px solid red; */
+    position: relative;
+    left: 120px;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .swiper-pagination-bullet {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    color: #000;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  .swiper-pagination-bullet-active {
+    color: #fff;
+    background: rgb(14, 103, 128);
+  }
+
+  /* --------------------------------footer-----------------  */
+
+footer{
+    background-color:#262228;
+    width: 100%;
+    height: 250px;
+    position: relative;   
+}
+
+.top{
+    width: 75px;
+    height: 98px;
+    position: absolute;
+    right: 120px;
+    top: -70px;
+    text-align: center;
+    animation: pulse;
+    animation-duration:2s; 
+    animation-iteration-count: infinite;
+}
+.top img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    vertical-align: top;
+    box-shadow: 9px -1px 5px rgba(0,0,0,0.18);
+}
+.top span{
+    color: white;
+    display: inline-block;
+    padding-top: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.footer_container{
+    width: 1080px;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.Baco-San-Juan{
+    position: absolute;
+    margin: 20px;
+    left: -200px;
+    z-index: 1;
+    animation:shakeX;
+    animation-duration:4s;
+}
+.Baco-San-Juan img{
+    width: 100%;
+    vertical-align: top;
+    animation:shakeX;
+    animation-duration:4s;
+}
+
+.footer_info{
+    padding-top: 50px;
+}
+.footer_info ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer_info ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-weight: bold; 
+    letter-spacing: 3px;
+  
+}
+
+.social-media{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    margin-top: 65px;
+    justify-content: space-evenly;
+    align-items: center;   
+}
+
+.social-media img{
+    width: 100%;
+    vertical-align: top;
+}

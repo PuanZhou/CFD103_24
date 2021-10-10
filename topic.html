@@ -32,7 +32,7 @@
                     <ul>
                         <li><a href="#">立即啟航</a></li>
                         <li><a href="#">博物館介紹</a></li>
-                        <li><a href="#">各館珍藏</a></li>
+                        <li><a href="./collection.html">各館珍藏</a></li>
                     </ul>
                 </div>
                 <div class="nav-right">
@@ -76,11 +76,11 @@
                     請選擇館別:
                     <select name="by-museum" id="by-museum">
                         <option value="" selected>請選擇館別</option>
-                        <option value="fukuoka">北京故宮</option>
-                        <option value="oita">大英博物館</option>
-                        <option value="saga">法國羅浮宮</option>
-                        <option value="nagasaki">梵蒂岡博物館</option>
-                        <option value="kumamoto">美國自然史博物館</option>
+                        <option value="Forbidden-City">北京故宮</option>
+                        <option value="British-Museum">大英博物館</option>
+                        <option value="Louvre">法國羅浮宮</option>
+                        <option value="Musei-Vaticani">梵蒂岡博物館</option>
+                        <option value="natural-history">美國自然史博物館</option>
                     </select>
                 </label>
                 <label for="search">關鍵字搜尋:
@@ -252,17 +252,7 @@
         </div>
     </section>
 
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-        renderBullet: function (index, className) {
-          return '<span class="' + className + '">' + (index + 1) + "</span>";
-        },
-      },
-    });
-  </script>
+  
 
  <!-- ------------------------footer------------------------ -->
 
@@ -321,3 +311,17 @@
     </footer>
 </body>
 </html>    
+
+
+
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (index + 1) + "</span>";
+        },
+      },
+    });
+  </script>

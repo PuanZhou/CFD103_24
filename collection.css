@@ -143,7 +143,6 @@ section.collection{
 .collection_container{
     width: 1200px; 
     margin: auto;
-    text-align: center;
     display: flex;
     /* border: 1px solid red; */
 }
@@ -205,6 +204,7 @@ section.collection{
     left: 0;
     padding:10px 10px;
     background-color: rgba(10, 10, 10, 0.61);
+    text-align: center;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -221,13 +221,12 @@ section.collection{
 
 .item_wrap .txt h4{
     color: white;
-    font-weight: 500;
     /* border: 1px solid red ; */
 }
 .item_wrap .txt p{
-    font-size: 16px;
+    font-size: 15px;
     color: white;
-    font-weight: 100;
+    font-weight: normal;
 }
 .item_wrap .txt a{
     background-color: #fff;

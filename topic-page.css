@@ -15,11 +15,6 @@ h2{
     font-weight: bold;
 }
 
-h3{
-    font-size: 20px;
-    font-weight: bold;
-}
-
 p{
     font-size: 18px;
     font-weight: bold;
@@ -89,7 +84,7 @@ header .title h1{
     display: inline-block;
     letter-spacing: 2px;
     color: white;
-    background-color: rgba(128, 86, 43, 0.7);
+    background-color: rgba(10, 10, 10, 0.61);
     padding: 20px 20px 20px 80px;
     position: absolute;
     top: 575px;
@@ -132,99 +127,71 @@ header .title h1{
     box-shadow: 8px 2px 5px rgba(82,82,82,0.75);
 }
 
-.path {
-    display: flex;
-    list-style: none;  
-    width: 1200px; 
-    padding-top: 50px;
-    margin: auto;
-}
-.path li{
-    padding: 6px 15px;
-    position: relative;
-}
-.path li a{
-    color: rgb(14, 103, 128);
-    text-decoration: none;
-    font-size: 18px;
-}
-.path li + li::before{
-    content:'/';
-    color: #aaa;
-    position: absolute;
-    left: 0;
-}
 
-.collection-item .container{
-    width: 1200px;
-    margin: auto;
-    margin-top: 100px;
-    position: relative;
-}
+/* -------------------------------文章抬頭--------------------- */
 
-/* -------------swiper------------ */
-
-.swiper {
-    width: 1200px;
-    height: 700px;
-  }
-
-  .swiper-slide {
-    text-align: center;
-    background: #fff;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .swiper-slide img {
-    display: block;
-    width:100%;
-    height:100%;
-    object-fit: cover;
-  }
-
-
-/* ------------------藏品介紹-------------------   */
-
-.collection-introduce .container{
-    width: 1200px;
-    margin: auto;
+.topic-head{
     margin-top: 150px;
-    display: flex;
-    /* border: 1px solid red;  */
 }
-
-.map .map_pic img{
-    width: 90%;
+.topic-head .container{
+    width: 1200px;
+    margin: auto;
+    text-align: center;
+    border-bottom: 1px solid rgba(82,82,82,0.75);
 }
-
-.container .map{
-    display: flex;  
+.topic-middle{
+    margin-top: 150px;
 }
-.map .map_pic{
-    position: relative;
-    /* border: 1px solid red;  */
+.topic-middle .container{
+    width: 1200px;
+    margin: auto;
 }
-.map .location{
-    position: absolute;
-    bottom: 160px;
-    right:195px;
-    animation: shakeY;
-    animation-duration:4s;
-    animation-iteration-count: infinite;
+.Mona-Lisa_pic img{
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
 }
-
-.container .txt{
-    margin: 20px;
-    width: 600px;
+.topic-middle .txt{
     padding: 20px;
-    /* border: 1px solid red;  */
-    letter-spacing: 2px;
+    letter-spacing: 1px;
+    border-bottom: 1px solid rgba(82,82,82,0.75);
 }
+.topic-bottom{
+    margin-top: 200px;
+    background-color: rgb(246, 246, 246);
+}
+.topic-bottom .container{
+    width: 1200px;
+    margin: auto;
+}
+.Cana_wrap{
+    display: flex;
+    /* border: 1px red solid; */
+}
+
+
+.Cana_wrap .txt{
+    width: 600px;
+    padding: 20px;    
+}
+
+.Canapic img{
+    width: 100%;
+    vertical-align: middle;
+    /* border: 1px red solid; */
+}
+
+
+.topic-end{
+    margin-top: 200px;
+}
+.topic-end .container{
+    width: 600px;
+    margin: auto;
+}
+
+/* --------------服務資訊-------------- */
+
 
 .museum_location i{
     font-size: 30px;
@@ -263,79 +230,6 @@ header .title h1{
 
 .button a:hover{
     background-color: rgb(248, 120, 120);
-}
-
-
-/* --------------珍藏推薦---------------- */
-
-.collection-suggest{
-    margin-top: 200px;
-    text-align: center;
-}
-.collection-suggest h1{
-    margin-bottom: 100px;
-}
-.suggest_container{
-    width: 1200px;
-    margin: auto;
-    text-align: center;
-    /* border: 1px solid red; */
-    display: flex;
-    flex-wrap: wrap;
-}
-.suggest_container .item{
-    width: 580px;
-    height: 400px;
-    margin-right: 40px;
-    display: flex;
-    box-shadow: 9px -2px 6px rgba(186,186,186,0.75);
-}
-
-.suggest_container .item:nth-child(2){
-    margin-right: 0px;
-}
-
-.collection_img img{
-    width:100%;
-    height:100%;
-    vertical-align: middle;
-    object-fit:cover;
-    /* border: 1px solid red; */
-}
-
-.item .suggest_txt{
-    width: 400px;
-    padding: 10px;
-    text-align: center;
-    letter-spacing: 1px;
-    /* border: 1px solid red; */
-}
-
-.suggest_txt .museum_location i {
-    font-size: 18px;
-}
-
-
-.suggest_txt span{
-    letter-spacing: 0px;
-    font-size: 14px;
-}
-
-.suggest_txt a{
-    background-color:rgb(14, 103, 128);
-    text-decoration: none;
-    letter-spacing: 1px;
-    color: #262228;
-    border-radius: 50px;
-    padding: 5px 10px;
-    font-size: 16px;
-    position: relative;
-    display: inline-block;
-}
-
-.suggest_txt a:hover{
-    color: #fff;
-    background-color:rgb(14, 103, 128);
 }
 
 /* -----------相關展覽專題推薦----------- */
@@ -408,11 +302,6 @@ a.topic-lable::before{
     background-repeat: no-repeat;
     transform: translate(-5px, 8px);
 }
-a.topic-lable.British-Museum{
-    background-color: rgb(145, 118, 88);
-}
-
-
 
 .topic-item-wrap span{
     display: inline-block;
@@ -431,16 +320,12 @@ a.topic-lable.British-Museum{
     text-decoration: none;
     margin:20px 10px;
     color: rgb(88,103,115);
-
     /* border: 1px solid red; */
 }
-.topic-item-wrap a.British_Museum{
-    color: rgb(145, 118, 88);
-}
 
- /* --------------------------------footer-----------------  */
+/* --------------------------------footer-----------------  */
 
- footer{
+footer{
     background-color:#262228;
     width: 100%;
     height: 250px;

@@ -15,6 +15,11 @@ h2{
     font-weight: bold;
 }
 
+h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+
 p{
     font-size: 18px;
     font-weight: bold;
@@ -84,7 +89,7 @@ header .title h1{
     display: inline-block;
     letter-spacing: 2px;
     color: white;
-    background-color: rgba(10, 10, 10, 0.61);
+    background-color: rgba(128, 86, 43, 0.7);
     padding: 20px 20px 20px 80px;
     position: absolute;
     top: 575px;
@@ -127,8 +132,212 @@ header .title h1{
     box-shadow: 8px 2px 5px rgba(82,82,82,0.75);
 }
 
-/* --------------------------------近期專題-----------------  */
+.path {
+    display: flex;
+    list-style: none;  
+    width: 1200px; 
+    padding-top: 50px;
+    margin: auto;
+}
+.path li{
+    padding: 6px 15px;
+    position: relative;
+}
+.path li a{
+    color: rgb(14, 103, 128);
+    text-decoration: none;
+    font-size: 18px;
+}
+.path li + li::before{
+    content:'/';
+    color: #aaa;
+    position: absolute;
+    left: 0;
+}
 
+.collection-item .container{
+    width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+    position: relative;
+}
+
+/* -------------swiper------------ */
+
+.swiper {
+    width: 1200px;
+    height: 700px;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+  }
+
+
+/* ------------------藏品介紹-------------------   */
+
+.collection-introduce .container{
+    width: 1200px;
+    margin: auto;
+    margin-top: 150px;
+    display: flex;
+    /* border: 1px solid red;  */
+}
+
+.map .map_pic img{
+    width: 90%;
+}
+
+.container .map{
+    display: flex;  
+}
+.map .map_pic{
+    position: relative;
+    /* border: 1px solid red;  */
+}
+.map .location{
+    position: absolute;
+    bottom: 160px;
+    right:195px;
+    animation: shakeY;
+    animation-duration:4s;
+    animation-iteration-count: infinite;
+}
+
+.container .txt{
+    margin: 20px;
+    width: 600px;
+    padding: 20px;
+    /* border: 1px solid red;  */
+    letter-spacing: 2px;
+}
+
+.museum_location i{
+    font-size: 30px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+}
+
+
+.official a{
+    text-decoration: none;
+    
+}
+.official span{
+    padding-left: 5px;
+    color: rgb(14, 103, 128);
+}
+.official img{
+    vertical-align: middle;
+}
+.button {  
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+}
+.button a{
+    width: 300px;
+    line-height: 75px;
+    font-size: 36px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    background-color: rgb(14, 103, 128);
+    color: white;
+    border-radius:10px;
+}
+
+.button a:hover{
+    background-color: rgb(248, 120, 120);
+}
+
+
+/* --------------珍藏推薦---------------- */
+
+.collection-suggest{
+    margin-top: 200px;
+    text-align: center;
+}
+.collection-suggest h1{
+    margin-bottom: 100px;
+}
+.suggest_container{
+    width: 1200px;
+    margin: auto;
+    text-align: center;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+}
+.suggest_container .item{
+    width: 580px;
+    height: 400px;
+    margin-right: 40px;
+    display: flex;
+    box-shadow: 9px -2px 6px rgba(186,186,186,0.75);
+}
+
+.suggest_container .item:nth-child(2){
+    margin-right: 0px;
+}
+
+.collection_img img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    /* border: 1px solid red; */
+}
+
+.item .suggest_txt{
+    width: 400px;
+    padding: 10px;
+    text-align: center;
+    letter-spacing: 1px;
+    /* border: 1px solid red; */
+}
+
+.suggest_txt .museum_location i {
+    font-size: 18px;
+}
+
+
+.suggest_txt span{
+    letter-spacing: 0px;
+    font-size: 14px;
+}
+
+.suggest_txt a{
+    background-color:rgb(14, 103, 128);
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: #262228;
+    border-radius: 50px;
+    padding: 5px 10px;
+    font-size: 16px;
+    position: relative;
+    display: inline-block;
+}
+
+.suggest_txt a:hover{
+    color: #fff;
+    background-color:rgb(14, 103, 128);
+}
+
+/* -----------相關展覽專題推薦----------- */
 section.topic{   
     margin-top: 200px; 
     padding-bottom: 200px;
@@ -139,17 +348,6 @@ section.topic{
     width: 1200px; 
     margin: auto;
     text-align: center;
-}
-
-.choice{
-
-    display: flex;
-    justify-content: space-between;
-}
-.search a{
-    text-decoration: none;
-    font-size: 20px;
-    margin-left:-3px;
 }
 
 .topic-item-wrap{
@@ -213,15 +411,7 @@ a.topic-lable.British-Museum{
     background-color: rgb(145, 118, 88);
 }
 
-a.topic-lable.Musei-Vaticani{
-    background-color: #A5A5AF;
-}
-a.topic-lable.Forbidden-City{
-    background-color: #b91a1a;
-}
-a.topic-lable.natural-history{
-    background-color: rgb(9,128,148);
-}
+
 
 .topic-item-wrap span{
     display: inline-block;
@@ -246,57 +436,10 @@ a.topic-lable.natural-history{
 .topic-item-wrap a.British_Museum{
     color: rgb(145, 118, 88);
 }
-.topic-item-wrap a.title.Musei_Vaticani{
-    color: #A5A5AF;
-}
-.topic-item-wrap a.title.Forbidden_City{
-    color: #b91a1a;
-}
 
-/* ------------Swiper-------------  */
+ /* --------------------------------footer-----------------  */
 
-.swiper {
-    width: 350px;
-    height: 50px;
-    /* border: 1px solid red; */
-  }
-
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .swiper-pagination-bullet {
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    line-height: 30px;
-    font-size: 20px;
-    color: #000;
-    opacity: 1;
-    background: rgba(0, 0, 0, 0.2);
-  }
-
-  .swiper-pagination-bullet-active {
-    color: #fff;
-    background: rgb(14, 103, 128);
-  }
-
-
-
-
-
-
-/* --------------------------------footer-----------------  */
-
-footer{
+ footer{
     background-color:#262228;
     width: 100%;
     height: 250px;

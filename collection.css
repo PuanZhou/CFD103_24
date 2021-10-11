@@ -90,10 +90,10 @@ header .title h1{
     letter-spacing: 2px;
     color: white;
     background-color: rgba(10, 10, 10, 0.61);
-    padding: 20px 20px 20px 80px;
+    padding: 20px 20px 20px 100px;
     position: absolute;
     top: 575px;
-    left: 20px;    
+    left: 0px;    
   
 }
 
@@ -254,7 +254,7 @@ span.topic-lable{
     position: absolute;
     left: 0px;
     top: 0px;
-    letter-spacing: 0.1rem;
+    letter-spacing: 2px;
     text-decoration: none;
     color: #fff;
     font-size: 15px;

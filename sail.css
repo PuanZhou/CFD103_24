@@ -269,10 +269,12 @@ margin-right: auto;
   }
 
 .sing-up .number input{
+    cursor:pointer;
     margin:0px 10px;
 }
 
 .sing-up .joing-date input{
+    cursor:pointer;
     margin:0px 10px;
 }
 .introduce{

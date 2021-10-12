@@ -1,5 +1,5 @@
 *{
-    font-family: "Microsoft JhengHei","Noto Sans CJK TC","Noto Sans TC";
+    font-family: 'Microsoft JhengHei','Noto Sans CJK TC','Noto Sans TC',sans-serif;
 }
 
 
@@ -11,14 +11,23 @@ h1{
 
 
 h2{
-    font-size: 24px;
+    font-size: 36px;
     font-weight: bold;
 }
 
+h3{
+    font-size: 28px;
+    font-weight: bold;
+}
+h4{
+    font-size: 20px;
+    font-weight: bold;
+}
 p{
     font-size: 18px;
     font-weight: bold;
 }
+
 
 /* -------------------導覽列----------------  */
 nav{

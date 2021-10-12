@@ -23,39 +23,43 @@ p{
 /* -------------------導覽列----------------  */
 nav{
     background-color: #262228;
-    width: 100%;
     height: 120px;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 5;
-    display: flex;
+    right: 0;
+    bottom: 0;
+    z-index: 4;
 }
-.nav_list{
-    width: 100%;
-    /* border: 1px solid red; */
+.list_wrap{
+    width:1200px;
     display: flex;
+    height: 120px;
     margin: auto;
-    justify-content: space-between;
-    align-items: center;
 }
-.nav_list ul{
+.list_wrap{
+    display: flex;
+    align-items: center; 
+    justify-content: space-around;
+}
+.list_wrap ul{
     list-style: none;  
     display: flex;
-
 } 
-.nav_list li {
-    padding: 0 90px;
+.list-left li {
+    margin-right: 25px;
 }   
-.nav_list ul li a{
+.list-right li {
+    margin-right: 25px;
+}   
+.list_wrap ul li a{
     text-decoration: none;
     color: white;
     font-size: 24px;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     font-weight: bold; 
-  
 }
-.nav_list a:hover{
+.list_wrap a:hover{
     display: inline-block;
     border-bottom: 2px solid white ;
     padding-bottom:10px;
@@ -187,21 +191,6 @@ section.slide{
 /* --------------------------------幻燈片----------------  */
 
  /* slide styles  */
-
- html,
- body {
-   position: relative;
-   height: 100%;
- }
- 
- body {
-   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-   font-size: 14px;
-   color: #000;
-   margin: 0;
-   padding: 0;
- }
- 
  .swiper {
    width: 100%;
    height: 100%;
@@ -375,7 +364,6 @@ section.topic{
  /* --------------------------------footer-----------------  */
 footer{
     background-color:#262228;
-    width: 100%;
     height: 250px;
     position: relative;   
 }
@@ -406,7 +394,7 @@ footer{
     font-weight: bold;
 }
 .footer_container{
-    width: 1080px;
+    width: 1200px;
     margin: auto;
     position: relative;
     z-index: 2;

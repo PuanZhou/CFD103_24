@@ -139,6 +139,10 @@ header .title h1{
     text-align: center;
     border-bottom: 1px solid rgba(82,82,82,0.75);
 }
+.topic-head .container .txt{
+    letter-spacing: 1px;
+    line-height:25px;
+}
 .topic-middle{
     margin-top: 150px;
 }
@@ -154,6 +158,7 @@ header .title h1{
 .topic-middle .txt{
     padding: 20px;
     letter-spacing: 1px;
+    line-height:25px;
     border-bottom: 1px solid rgba(82,82,82,0.75);
 }
 .topic-bottom{
@@ -163,6 +168,10 @@ header .title h1{
 .topic-bottom .container{
     width: 1200px;
     margin: auto;
+}
+.topic-bottom .container .txt{
+    letter-spacing: 1px;
+    line-height:25px;
 }
 .Cana_wrap{
     display: flex;
@@ -180,14 +189,16 @@ header .title h1{
     vertical-align: middle;
     /* border: 1px red solid; */
 }
-
-
 .topic-end{
     margin-top: 200px;
 }
 .topic-end .container{
     width: 600px;
     margin: auto;
+}
+.topic-end .container .txt{
+    letter-spacing: 1px;
+    line-height:25px;
 }
 
 /* --------------服務資訊-------------- */
@@ -317,6 +328,7 @@ a.topic-lable::before{
     font-size: 18px;
     font-weight: bold;
     letter-spacing: 3px;
+    line-height:25px;
     text-decoration: none;
     margin:20px 10px;
     color: rgb(88,103,115);

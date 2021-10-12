@@ -181,10 +181,10 @@ margin-right: auto;
     width: 1200px;
 }
 
-.containter .txt{
+.head .containter .txt{
     margin-left: 40px;
     letter-spacing: 2px;
-    line-height:25px
+    line-height:30px
 }
 .containter .txt p{
     padding-left: 50px;
@@ -216,7 +216,7 @@ margin-right: auto;
 }
 .feature .containter .txt{
     letter-spacing: 2px;
-    line-height:25px;
+    line-height:30px;
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
 }
@@ -293,6 +293,12 @@ margin-right: auto;
 .introduce .forbidden-city_logo img{
     vertical-align: middle;  
 }
+
+.introduce .content{
+    letter-spacing: 2px;
+    line-height:30px;
+}
+
 .introduce .content img{
     width: 1200px;
     height: 700px;

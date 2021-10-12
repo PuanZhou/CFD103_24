@@ -224,6 +224,7 @@ header .title h1{
     padding: 20px;
     /* border: 1px solid red;  */
     letter-spacing: 2px;
+    line-height:25px;
 }
 
 .museum_location i{
@@ -308,6 +309,7 @@ header .title h1{
     padding: 10px;
     text-align: center;
     letter-spacing: 1px;
+    line-height:25px;
     /* border: 1px solid red; */
 }
 

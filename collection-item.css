@@ -211,7 +211,7 @@ header .title h1{
 }
 .map .location{
     position: absolute;
-    bottom: 160px;
+    bottom: 220px;
     right:195px;
     animation: shakeY;
     animation-duration:4s;

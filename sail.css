@@ -249,12 +249,7 @@ margin-right: auto;
     padding: 20px;
     background-color:#FF1F0054;
 }
-
-.sing-up .button {
-    font-size:20px;
-}
-
-.sing-up .button input{
+.sing-up .options input{
     margin: 0px 10px; 
     background-color:rgb(14, 103, 128);
     color:#fff;
@@ -264,7 +259,7 @@ margin-right: auto;
     height:50px;
     cursor:pointer;
 }
-.sing-up .button input:hover{
+.sing-up .options input:hover{
     background-color: rgb(248, 120, 120);
   }
 

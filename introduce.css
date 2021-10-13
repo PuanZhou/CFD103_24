@@ -88,7 +88,8 @@ nav{
     object-fit: cover;
 }
 
-header .title h1{
+
+.header .title h1{
     display: inline-block;
     letter-spacing: 2px;
     color: white;

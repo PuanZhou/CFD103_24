@@ -126,14 +126,14 @@ section.start{
     background-color: rgb(246, 246, 246); 
 }
 .start .container{
-    width: 100%;
-
+    width: 1920px;
     margin: auto; 
     display: flex;
     align-items: center;
 }
-.pic_intro{
+.container .intro{
     position: relative;
+    width: 860px;
 }
 .pic_intro img{
     width: 100%;
@@ -147,6 +147,8 @@ section.start{
     margin: 20px;
     letter-spacing: 2px;
     top: 0;
+    right: 0;
+    bottom: 0;
     left: 0;
 }
 .intro .txt h2{

@@ -180,12 +180,12 @@ margin-right: auto;
 
 .head .containter{
     width: 1200px;
+    margin: auto;
 }
 
 .head .containter .txt{
-    margin-left: 40px;
     letter-spacing: 2px;
-    line-height:30px
+    line-height:30px;
 }
 .containter .txt p{
     padding-left: 50px;
@@ -213,7 +213,7 @@ margin-right: auto;
 }
 .feature .containter{
     width: 1200px;
-    margin-left: 200px;
+    margin: auto;
 }
 .feature .containter .txt{
     letter-spacing: 2px;

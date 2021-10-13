@@ -81,11 +81,13 @@ nav{
  
 }
 
+.header{
+    position: relative;
+}
 .wallpaper img{
     width: 100%;
     max-height: 700px;
     object-fit: cover;
-    position: relative;
 }
 
 header .title h1{
@@ -95,9 +97,8 @@ header .title h1{
     background-color: rgba(10, 10, 10, 0.61);
     padding: 20px 20px 20px 100px;
     position: absolute;
-    top: 575px;
-    left: 0px;    
-  
+    bottom: -32px;
+    left: 0;      
 }
 
 /* -------------------拿破崙----------------  */

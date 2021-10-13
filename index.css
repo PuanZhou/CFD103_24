@@ -200,6 +200,10 @@ section.slide{
 }
 
 /* --------------------------------幻燈片----------------  */
+.video{
+    width: 1920px;
+}
+
 
  /* slide styles  */
  .swiper {

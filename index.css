@@ -117,7 +117,7 @@ nav{
 /* -------------------影片----------------  */
 .video{
     margin: auto;
-    width: 100%;
+    width: 1900px;
 }
 
 /* -------------------立即啟航----------------  */
@@ -126,7 +126,7 @@ section.start{
     background-color: rgb(246, 246, 246); 
 }
 .start .container{
-    width: 1920px;
+    width: 1900px;
     margin: auto; 
     display: flex;
     align-items: center;
@@ -200,11 +200,6 @@ section.slide{
 }
 
 /* --------------------------------幻燈片----------------  */
-.video{
-    width: 1920px;
-}
-
-
  /* slide styles  */
  .swiper {
    width: 100%;

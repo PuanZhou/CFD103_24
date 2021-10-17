@@ -7,11 +7,10 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet"/>
     <link rel="stylesheet" href="./Normalize.css"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="./swiper-bundle.min.css"/>
-    <link href="./fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet">  
-   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <link href="./fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="./swiper-bundle.min.css"/>  
+   <script src="./swiper/swiper-bundle.js"></script>
    <script src="./WOW/dist/wow.min.js"></script>
-
    <script>
     new WOW().init();
     </script>
@@ -45,14 +44,17 @@
                 </div>
             </div>
         </nav>
-        <div class="wallpaper">
-            <img src="./resources/vatican-map-hall-empty.jpg" alt="">         
-        </div>
-        <div class="title">
-            <h1>近期展覽專題</h1>
+        <div class="header">
+            <div class="wallpaper">
+                <img src="./resources/vatican-map-hall-empty.jpg" alt="">
+            </div>
+            <div class="title">
+                <h1>近期展覽專題</h1>
+            </div>
         </div>
     </header>  
       
+
     
     
     <!-- ------------------------拿破崙------------------------ -->
@@ -78,7 +80,7 @@
                 <label for="museum">
                     請選擇館別:
                     <select name="by-museum" id="by-museum">
-                        <option value="" selected>請選擇館別</option>
+                        <option value="請選擇館別" selected>請選擇館別</option>
                         <option value="Forbidden-City">北京故宮</option>
                         <option value="British-Museum">大英博物館</option>
                         <option value="Louvre">法國羅浮宮</option>
@@ -86,7 +88,7 @@
                         <option value="natural-history">美國自然史博物館</option>
                     </select>
                 </label>
-                <label for="search">關鍵字搜尋:
+                <label for="keywords">關鍵字搜尋:
                         <input type="text" name="keywords" id="keywords" placeholder="請輸入您想查詢的關鍵字">
                         <a href=""><i class="fas fa-search"></i></a>
                 </label>          

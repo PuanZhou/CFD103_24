@@ -111,12 +111,15 @@ nav{
     font-weight: bold;
     padding:15px;
     border-radius:20px;
-    box-shadow: 8px 2px 5px rgba(82,82,82,0.75);
+    box-shadow: 4px 2px 5px rgba(99, 98, 98, 0.7);
 }
 
 /* -------------------影片----------------  */
-.video{
-    margin: auto;
+header.wrap{
+    width: 100%;
+}
+
+.wrap video{
     width: 100%;
 }
 
@@ -126,17 +129,16 @@ nav{
     background-color: rgb(246, 246, 246); 
 }
 .start .container{
-    width: 1900px;
     display: flex;
     margin: auto;
     align-items: center;
 }
 .container .intro{
-    width: 860px;
-    margin: auto; 
+    width: 100%;
+    position: relative;
 }
 .pic_intro{
-    position: relative;
+    width: 100%;
 }
 .pic_intro img{
     width: 100%;
@@ -147,6 +149,7 @@ nav{
  .intro .txt{
     margin: 20px;
     top: 0;
+    left: 0;
     letter-spacing: 2px;
     position: absolute;
 }
@@ -178,8 +181,11 @@ nav{
 .intro .button a:hover{
     background-color: rgb(248, 120, 120);
 }
+.pic_Atene{
+    width: 100%;
+}
 .pic_Atene img{   
-    max-width: 100%;
+    width: 100%;
     opacity: 75%;
     vertical-align:middle;
 }
@@ -199,9 +205,11 @@ section.slide{
 
 /* --------------------------------幻燈片----------------  */
  /* slide styles  */
+ :root {
+    --swiper-theme-color: black;
+  }
  .swiper {
    width: 100%;
-   height: 100%;
  }
  
  .swiper-slide {
@@ -231,7 +239,7 @@ section.slide{
 /* --------------------------------各館珍藏-----------------  */
 
 section.collection{
-    background-color: #262228;
+    background-color: #474547;
     width: 100%;
     margin-top: 200px;   
 }

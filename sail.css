@@ -132,7 +132,7 @@ header .title h1{
     font-weight: bold;
     padding:15px;
     border-radius:20px;
-    box-shadow: 8px 2px 5px rgba(82,82,82,0.75);
+    box-shadow: 4px 2px 5px rgba(99, 98, 98, 0.7);
 }
 
 .slider .container{

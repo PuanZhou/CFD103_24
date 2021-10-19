@@ -188,6 +188,7 @@ header .title h1{
     width: 100%;
     height: 800px;
     object-fit: cover;
+    vertical-align: top;
 }
 .topic-middle .txt{
     padding: 20px;
@@ -211,8 +212,9 @@ header .title h1{
     display: flex;
     /* border: 1px red solid; */
 }
-
-
+.Cana_wrap .txt h2{
+    text-indent: -2em;
+}
 .Cana_wrap .txt{
     width: 600px;
     padding: 20px;    
@@ -220,7 +222,7 @@ header .title h1{
 
 .Canapic img{
     width: 100%;
-    vertical-align: middle;
+    vertical-align: top;
     /* border: 1px red solid; */
 }
 .topic-end{
@@ -283,28 +285,27 @@ section.topic{
     padding-bottom: 200px;
 
 }
-
 .topic_container{
     width: 1200px; 
     margin: auto;
     text-align: center;
 }
-
 .topic-item-wrap{
     margin-top: 100px;
-    display: flex;
-    flex-wrap: wrap;
     /* border: 1px solid red; */
 }
-
-.topic-item{
+.topic-item-wrap ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.topic-item-wrap li{
     width: 31.666666%;
     height: 450px;
     margin-right: 2.5%;
     margin-bottom: 50px;
     box-shadow: 9px -2px 6px rgba(186,186,186,0.75);
 }
-
 .topic-img{
     position: relative;
 }
@@ -314,15 +315,9 @@ section.topic{
     height: 300px;
     vertical-align: middle;    
 }
-
-.topic-item.Mona-Lisa img{
-    object-fit: cover;
-    object-position: top; 
-}
-.topic-item:nth-child(3n){
+.topic-item-wrap li:nth-child(3n){
     margin-right: 0px;
 }
-
 
 a.topic-lable{
     background-color: rgb(88,103,115);
@@ -347,7 +342,6 @@ a.topic-lable::before{
     background-repeat: no-repeat;
     transform: translate(-5px, 8px);
 }
-
 .topic-item-wrap span{
     display: inline-block;
     font-size: 18px;
@@ -356,7 +350,6 @@ a.topic-lable::before{
     /* border:1px solid red; */
 
 }
-
 .topic-item-wrap a.title{
     display: inline-block;
     font-size: 18px;
@@ -366,9 +359,9 @@ a.topic-lable::before{
     text-decoration: none;
     margin:20px 10px;
     color: rgb(88,103,115);
+
     /* border: 1px solid red; */
 }
-
 /* --------------------------------footer-----------------  */
 
 footer{
@@ -419,8 +412,6 @@ footer{
 .Baco-San-Juan img{
     width: 100%;
     vertical-align: top;
-    animation:shakeX;
-    animation-duration:4s;
 }
 
 .footer_info{

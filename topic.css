@@ -11,18 +11,10 @@ h1{
 
 
 h2{
-    font-size: 36px;
-    font-weight: bold;
-}
-
-h3{
-    font-size: 28px;
-    font-weight: bold;
-}
-h4{
     font-size: 20px;
     font-weight: bold;
 }
+
 p{
     font-size: 18px;
     font-weight: bold;
@@ -158,12 +150,14 @@ section.topic{
 
 .topic-item-wrap{
     margin-top: 100px;
-    display: flex;
-    flex-wrap: wrap;
     /* border: 1px solid red; */
 }
-
-.topic-item{
+.topic-item-wrap ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.topic-item-wrap li{
     width: 31.666666%;
     height: 450px;
     margin-right: 2.5%;
@@ -181,11 +175,11 @@ section.topic{
     vertical-align: middle;    
 }
 
-.topic-item.Mona-Lisa img{
+.topic-img .Mona_Lisa{
     object-fit: cover;
     object-position: top; 
 }
-.topic-item:nth-child(3n){
+.topic-item-wrap li:nth-child(3n){
     margin-right: 0px;
 }
 
@@ -231,7 +225,7 @@ a.topic-lable.natural-history{
     display: inline-block;
     font-size: 18px;
     margin-top: 20px;
-    letter-spacing: 2px;
+    letter-spacing: 0.1rem;
     /* border:1px solid red; */
 
 }
